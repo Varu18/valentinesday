@@ -1,0 +1,107 @@
+/* Setări generale */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe6e6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container centrat */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+
+/* Titlu principal */
+h1 {
+    color: #ff4d4d;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Text de introducere */
+#introText {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-shadow: 2px 2px 10px rgba(255, 77, 77, 0.5);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    border-right: 3px solid #ff4d4d;
+    animation: blink 0.5s step-end infinite alternate;
+}
+
+/* Stil pentru butoane */
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1a1a;
+}
+
+/* Buton NU */
+#btnNu {
+    background-color: #666;
+}
+
+#btnNu:hover {
+    background-color: #333;
+}
+
+/* GIF-ul Tom & Jerry */
+#gifTomJerry {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Optimizări pentru iPhone și ecrane mici */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #introText {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    #gifTomJerry {
+        width: 95vw;
+        max-height: 80vh;
+    }
+}
